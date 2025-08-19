@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Personal Finance Dashboard</h1>
+            <p>Master JavaScript fundamentals with practical examples!</p>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h2>Part 1: Budget Analyzer (Variables & Conditionals)</h2>
+                <div class="input-group">
+                    <label>Monthly Income:</label>
+                    <input type="number" id="income" placeholder="Enter your income">
+                </div>
+                <div class="input-group">
+                    <label>Monthly Expenses:</label>
+                    <input type="number" id="expenses" placeholder="Enter your expenses">
+                </div>
+                <button onclick="analyzeBudget()">Analyze Budget</button>
+                <div id="budgetResult" class="result"></div>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Financial Calculator (Custom Functions)</h2>
+                <div class="input-group">
+                    <label>Principal Amount:</label>
+                    <input type="number" id="principal" placeholder="Initial amount">
+                </div>
+                <div class="input-group">
+                    <label>Interest Rate (%):</label>
+                    <input type="number" id="interest" placeholder="Annual interest rate">
+                </div>
+                <div class="input-group">
+                    <label>Time (years):</label>
+                    <input type="number" id="time" placeholder="Investment period">
+                </div>
+                <button onclick="calculateCompoundInterest()">Calculate Compound Interest</button>
+                <button onclick="formatCurrency(1234567.89)">Demo Currency Formatter</button>
+                <div id="calculatorResult" class="result"></div>
+            </div>
+
+            <div class="section">
+                <h2>Part 3: Expense Tracker (Loops in Action)</h2>
+                <div class="input-group">
+                    <label>Expense Name:</label>
+                    <input type="text" id="expenseName" placeholder="Coffee, Gas, etc.">
+                </div>
+                <div class="input-group">
+                    <label>Amount:</label>
+                    <input type="number" id="expenseAmount" placeholder="Amount spent">
+                </div>
+                <button onclick="addExpense()">Add Expense</button>
+                <button onclick="generateMonthlyReport()">Generate Report (Loop Demo)</button>
+                <button onclick="startCountdown()">Start 10-Second Countdown</button>
+                <div id="countdown"></div>
+                <div id="expensesList"></div>
+                <div id="monthlyReport" class="result"></div>
+            </div>
+
+            <div class="section">
+                <h2>Part 4: Interactive Dashboard (DOM Magic)</h2>
+                <button onclick="toggleFinancialTips()">Toggle Financial Tips</button>
+                <button onclick="changeTheme()">Change Theme</button>
+                <button onclick="createSavingsGoal()">Create New Savings Goal</button>
+                
+                <div id="financialTips" class="toggle-content">
+                    <h3>Financial Tips:</h3>
+                    <ul>
+                        <li>Follow the 50/30/20 rule: 50% needs, 30% wants, 20% savings</li>
+                        <li>Build an emergency fund of 3-6 months expenses</li>
+                        <li>Invest early to benefit from compound interest</li>
+                        <li>Track your expenses to identify spending patterns</li>
+                    </ul>
+                </div>
+                
+                <div id="savingsGoals"></div>
+                <div id="domDemoResult" class="result"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
